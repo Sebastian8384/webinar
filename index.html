@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webinar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+            height: 100vh;
+        }
+
+        .webinar-container {
+            position: relative;
+        }
+
+        .webinar-image {
+            display: block;
+        }
+
+        .register-button {
+            position: absolute;
+            bottom: 3%; 
+            left: 50%;
+            transform: translateX(-50%);
+            width: 160px; 
+            height: 40px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="webinar-container">
+        <img src="webinar.jpg" alt="Webinar" class="webinar-image">
+        <button 
+            class="register-button" 
+            onclick="window.location.href='https://invgate.zoom.us/webinar/register/WN_Kx-BPHGRRum-_FxE3ps01A';" 
+            aria-label="Registrarme">
+        </button>
+    </div>
+</body>
+</html>
